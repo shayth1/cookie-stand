@@ -30,11 +30,16 @@ store.prototype.salesHour = function () {
         this.totalPH[i] = Math.floor(this.custNum[i] * this.avg);
     }
 }
+
+//git final total for each store
 store.prototype.finalTotalStore = function () {
     for (var s = resetVal; s < this.totalPH.length; s++) {
-        this.storeTotal = this.storeTotal + this.totalPH[s];
+
+        this.storeTotal = this.totalPH[0] + this.totalPH[1] + this.totalPH[2] + this.totalPH[3] + this.totalPH[4] + this.totalPH[5] + this.totalPH[6]
+            + this.totalPH[7] + this.totalPH[8] + this.totalPH[9] + this.totalPH[10] + this.totalPH[11] + this.totalPH[12] + this.totalPH[13];
     }
 }
+
 
 
 
@@ -97,32 +102,3 @@ for (var x = resetVal; x < storeName.length; x++) {
     storeTotal[x].textContent = storeName[x].storeTotal;
     cells[x].appendChild(storeTotal[x]);
 }
-
-
-
-
-let finalStore = [];
-let totalCell = [];
-let TPH = document.createElement("tr");
-TPH.textContent = "TOTAL";
-gitTabel.appendChild(TPH);
-for (var i = resetVal; i < workingHours.length; i++) {
-    for (var x = resetVal; x < workingHours.length; x++) {
-        finalStore[x] = seattle.totalPH[x] + dubai.totalPH[x] + seattle.totalPH[x] + paris.totalPH[x] + lima.totalPH[x]
-    }
-    totalCell[i] = document.createElement('td');
-    totalCell[i].textContent = finalStore[i];
-    TPH.appendChild(totalCell[i])
-
-}
-
-
-
-
-var finalTotal = resetVal;
-for (i = resetVal; i < workingHours.length; i++) {
-    finalTotal += finalStore[i];
-}
-let lastEntry = document.createElement("td");
-lastEntry.textContent = finalTotal;
-TPH.appendChild(lastEntry);
