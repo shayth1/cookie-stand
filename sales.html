@@ -23,10 +23,56 @@
     </header>
     <main>
         <div class="alert alert-info" role="alert">
-            Branch's info
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">add new
+                store</button>
+
         </div>
         <div class="row-md-16" id='push'>
 
+        </div>
+
+        <!-- add new store -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <legend class="modal-title" id="exampleModalLabel">Add new store</legend>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addStore">
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="storeName" class="col-form-label">Store Name</label>
+                                    <input type="text" name="storeLocation" class="form-control" id="storeName"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="minCust" class="col-form-label">Minimum Cust</label>
+                                    <input type="number" name="storeMin" class="form-control" id="minCust" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="maxCust" class="col-form-label">Maximum Cust</label>
+                                    <input type="number" name="storeMax" class="form-control" id="maxCust" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="avg" class="col-form-label">Avarge</label>
+                                    <input type="text" name="storeAvg" class="form-control" id="avg" required>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-success">Add Store</button>
+                                </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
 
