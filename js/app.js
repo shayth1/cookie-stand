@@ -8,6 +8,7 @@ var dubai = new store("Dubai", 11, 28, 3.7);
 var paris = new store("Paris", 20, 38, 2.3);
 var lima = new store("Lima", 2, 16, 4.6);
 
+
 function store(location, min, max, avgCust,) {
     this.location = location;
     this.minCust = min;
@@ -63,6 +64,8 @@ lima.customer(lima.minCust, lima.maxCust);
 lima.salesHour();
 lima.finalTotalStore();
 
+
+
 let selectDiv = document.getElementById("push");
 let gitTabel = document.createElement("table");
 selectDiv.appendChild(gitTabel);
@@ -102,3 +105,48 @@ for (var x = resetVal; x < storeName.length; x++) {
     storeTotal[x].textContent = storeName[x].storeTotal;
     cells[x].appendChild(storeTotal[x]);
 }
+
+// lab09
+var newStore = document.getElementById('addStore');
+
+function daynamic(newadd) {
+    newadd.customer(newadd.minCust, newadd.maxCust); // do the rest of math
+    newadd.salesHour();
+    newadd.finalTotalStore();
+}
+
+
+addStore.addEventListener('submit', function (event) {
+
+    event.preventDefault();
+    //get vals
+    var city = event.target.storeLocation.value;
+    var minimum = event.target.storeMin.value;
+    var maximum = event.target.storeMax.value;
+    var sAvg = event.target.storeAvg.value;
+
+    var newadd = new store(city, minimum, maximum, sAvg) //assign as a new store
+    daynamic(newadd);
+    console.log(newadd);
+    // print it out
+    let shayth = [newadd];
+    let cells = [];
+    let storeTotal = [];
+    for (var x = resetVal; x < shayth.length; x++) {
+        cells[x] = document.createElement("tr");
+        cells[x].textContent = shayth[x].location
+        gitTabel.appendChild(cells[x]);
+        for (var i = resetVal; i < workingHours.length; i++) {
+            var rowBox = [];
+            rowBox[i] = document.createElement("td");
+            rowBox[i].textContent = shayth[x].totalPH[i];
+            cells[x].appendChild(rowBox[i]);
+
+        }
+        storeTotal[x] = document.createElement("td");
+        storeTotal[x].textContent = shayth[x].storeTotal;
+        cells[x].appendChild(storeTotal[x]);
+    }
+
+
+});
