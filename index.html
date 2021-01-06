@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
 
     </style>
@@ -51,15 +53,113 @@
     <div class="container-fluid bg-2 text-center">
         <h3 class="margin">Whaere you can find us?</h3>
         <p>Seattle - Tokyo - Dubai - Paris - Lima </p>
-        <a href="#" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-search"></span> More
+        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+            <span class="fa fa-map-marker"></span> Directions
+        </button>
+        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#WH">
+            <span class="fa fa-clock-o"></span> Working Hours
+        </button>
         </a>
+        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#contact">
+            <span class="fa fa-envelope-o"></span> Contact Us
+        </button>
     </div>
 
 
     <footer class="container-fluid bg-4 text-center">
         <p>Cookies <a href="https://github.com/shayth1">| Shayth Bani Baker</a></p>
     </footer>
+
+    <!-- Location modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="address" id="exampleModalLongTitle">Whaere you can find us?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="address">Seattle</h5>
+                    <p class="address"><span class="fa fa-map-marker"> </span> 152 John Smith St. +1 685-5875
+                    </p>
+                    <hr>
+                    <h5 class="address">Tokyo</h5>
+                    <p class="address"> <span class="fa fa-map-marker"> </span> 152 John Smith St. +1 685-5875
+                    </p>
+                    <hr>
+                    <h5 class="address">Dubai</h5>
+                    <p class="address"> <span class="fa fa-map-marker"> </span> 152 John Smith St. +1 685-5875
+                    </p>
+                    <hr>
+                    <h5 class="address">Paris</h5>
+                    <p class="address"><span class="fa fa-map-marker"> </span> 152 John Smith St. +1 685-5875
+                    </p>
+                    <hr>
+                    <h5 class="address">Lima</h5>
+                    <p class="address"> <span class="fa fa-map-marker"></span> 152 John Smith St. +1 685-5875
+                    </p>
+                    <hr>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WH modal  -->
+
+
+    <div class="modal fade" id="WH" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="address" id="exampleModalLongTitle">Working Hours</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body address">
+                    <h5> SAT - FRY / 06:00am - 07:00pm</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact us modal -->
+
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="address" id="exampleModalLongTitle">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body address">
+                    <h5 class="address"><span class="fa fa-envelope-o"> </span> info@cookiestand.com</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 </body>
 
