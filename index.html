@@ -35,7 +35,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="sales.html">Sales</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a data-toggle="modal" data-target="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +52,7 @@
 
     <div class="container-fluid bg-2 text-center">
         <h3 class="margin">Whaere you can find us?</h3>
-        <p>Seattle - Tokyo - Dubai - Paris - Lima </p>
+        <p class="gfont">Seattle - Tokyo - Dubai - Paris - Lima </p>
         <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
             <span class="fa fa-map-marker"></span> Directions
         </button>
@@ -76,35 +76,66 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="address" id="exampleModalLongTitle">Whaere you can find us?</h5>
+                    <h5 class="address gfont" id="exampleModalLongTitle ">Whaere you can find us?</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h5 class="address">Seattle</h5>
+                    <h5 class="address gfont adresscolor">Seattle</h5>
                     <p class="address"><span class="fa fa-map-marker"> </span> 152 John Smith St. +1 685-5875
                     </p>
+                    <!-- seattle map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1345.7350231638898!2d-122.31196675129625!3d47.57809870
+                    217681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906a876d2a1e57%3A0x998fa6cc448e5976!2s2874-2826%20Beacon%20Ave
+                    %20S%2C%20Seattle%2C%20WA%2098144%2C%20USA!5e0!3m2!1sen!2sjo!4v1610092495223!5m2!1sen!2sjo"
+                        width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">
+                    </iframe>
                     <hr>
-                    <h5 class="address">Tokyo</h5>
+                    <h5 class="address gfont adresscolor">Tokyo</h5>
                     <p class="address"> <span class="fa fa-map-marker"> </span> 152 John Smith St. +1 685-5875
                     </p>
+                    <!-- tokyo map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4650.193949452624!2d139.74800599970743!3d35.67597559733021
+                    !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8f559451e1%3A0xe2619411ebeb190d!2sLAWSON%20H%20Tameikesanno!5e0!3m2!
+                    1sen!2sjo!4v1610092640270!5m2!1sen!2sjo" width="500" height="350" frameborder="0" style="border:0;"
+                        allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+
                     <hr>
-                    <h5 class="address">Dubai</h5>
+                    <h5 class="address gfont adresscolor">Dubai</h5>
                     <p class="address"> <span class="fa fa-map-marker"> </span> 152 John Smith St. +1 685-5875
                     </p>
+                    <!-- dubai map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12056.913207174925!2d55.26711014015695!3d25.18578904762901
+                    !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682d2c40e4e1%3A0xc5b6fdc5bef83eb3!2sSah%20El%20Nom%20Cafe!5e0!3m2!1sen
+                    !2sjo!4v1610092822820!5m2!1sen!2sjo" width="500" height="350" frameborder="0" style="border:0;"
+                        allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
                     <hr>
-                    <h5 class="address">Paris</h5>
+                    <h5 class="address gfont adresscolor">Paris</h5>
                     <p class="address"><span class="fa fa-map-marker"> </span> 152 John Smith St. +1 685-5875
                     </p>
+                    <!-- paris map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10501.605524453511!2d2.2839547824302393!3d48.85055603669807
+                    !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701bc3876107%3A0x95163ba7f7cbd88d!2sGrenelle%2C%2075015%20Paris%2C%20
+                    France!5e0!3m2!1sen!2sjo!4v1610092995467!5m2!1sen!2sjo" width="500" height="350" frameborder="0"
+                        style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     <hr>
-                    <h5 class="address">Lima</h5>
+                    <h5 class="address gfont adresscolor">Lima</h5>
                     <p class="address"> <span class="fa fa-map-marker"></span> 152 John Smith St. +1 685-5875
                     </p>
+                    <!-- lima map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.8978801917406!2d-77.03979734946041!3d-12.050546845210294
+                    !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c8ea2e6ad9%3A0x1092db4868ad9446!2sJir%C3%B3n%20Cailloma%20818-880%2C%20
+                    Cercado%20de%20Lima%2015001%2C%20Peru!5e0!3m2!1sen!2sjo!4v1610093103330!5m2!1sen!2sjo" width="500"
+                        height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
                     <hr>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger gfont" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -117,16 +148,16 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="address" id="exampleModalLongTitle">Working Hours</h5>
+                    <h5 class="address gfont" id="exampleModalLongTitle">Working Hours</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body address">
+                <div class="modal-body address gfont">
                     <h5> SAT - FRY / 06:00am - 07:00pm</h5>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger gfont" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -138,16 +169,17 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="address" id="exampleModalLongTitle">Contact Us</h5>
+                    <h5 class="address gfont" id="exampleModalLongTitle">Contact Us</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body address">
-                    <h5 class="address"><span class="fa fa-envelope-o"> </span> info@cookiestand.com</h5>
+                    <h5 class="address gfont"><span class="fa fa-envelope-o"> </span><a
+                            href="mailto:info@cookiestand.com">info@cookiestand.com</a> </h5>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger gfont" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
