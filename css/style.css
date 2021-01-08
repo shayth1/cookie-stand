@@ -64,3 +64,20 @@ body {
   .address{
     color: #000000;
   }
+
+  .gfont{
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .adresscolor{
+    color: #1abc9c;
+  }
+  .fa-map-marker{
+    color: #b91b1b;
+  }
+  .fa-clock-o{
+    color: #08f36a;
+  }
+  .fa-envelope-o{
+    color: #0ca5ec;
+  }
